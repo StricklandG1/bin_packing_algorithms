@@ -9,6 +9,6 @@ void print(const std::vector<double>& v);
 
 void print(const std::vector<int>& v);
 
-void reverse(std::vector<double>& v);
+double items_total(const std::vector<double>& v);
 
-double count(const std::vector<double>& v);
+void write_to_file(const std::string& file, int set_size, double waste);

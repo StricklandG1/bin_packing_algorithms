@@ -20,7 +20,7 @@ void next_fit(const std::vector<double>& items, std::vector<int>& assignment, st
 		}
 	}
 
-	print(items);
+	/*print(items);
 	print(assignment);
-	print(free_space);
+	print(free_space);*/
 }

@@ -28,15 +28,15 @@ void first_fit(const std::vector<double>& items, std::vector<int>& assignment, s
 			assignment[i] = j;
 		}
 	}
-	print(items);
+	/*print(items);
 	print(assignment);
-	print(free_space);
+	print(free_space);*/
 }
 
 void first_fit_decreasing(const std::vector<double>& items, std::vector<int>& assignment, std::vector<double>& free_space)
 {
 	std::vector<double> items_copy = items;
-	std::sort(items_copy.begin(), items_copy.end());
-	reverse(items_copy);
+	std::sort(items_copy.rbegin(), items_copy.rend());
+	//reverse(items_copy);
 	first_fit(items_copy, assignment, free_space);
 }

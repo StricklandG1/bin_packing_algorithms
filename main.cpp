@@ -11,7 +11,23 @@ const int PHAT_ASS_SET = 100000000;
 
 int main()
 {
-	test_set(TINY_SET);
+
+	//test_set(10);
+	for(int i = 0; i < 5; ++i)
+		test_set(TINY_SET);
+
+	for (int i = 0; i < 5; ++i)
+		test_set(SMALL_SET);
+
+	for (int i = 0; i < 5; ++i)
+		test_set(MEDIUM_SET);
+
+	for (int i = 0; i < 5; ++i)
+		test_set(LARGE_SET);
+
+	for (int i = 0; i < 5; ++i)
+		test_set(LARGER_SET);
+
 
 	return 0;
 }
