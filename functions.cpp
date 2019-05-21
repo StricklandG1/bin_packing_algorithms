@@ -30,7 +30,7 @@ void test_set(int set_size)
 	double count = items_total(items);
 	std::cout << "------------------------------- NEXT FIT -------------------------------\n\n";
 	next_fit(items, assignment, bins);
-	double waste = count - bins.size();
+	double waste = bins.size() - count;
 	write_to_file("next_fit", set_size, waste);
 	bins.clear();
 	bins.push_back(1.0);
@@ -38,7 +38,7 @@ void test_set(int set_size)
 
 	std::cout << "------------------------------- FIRST FIT -------------------------------\n\n";
 	first_fit(items, assignment, bins);
-	waste = count - bins.size();
+	waste = bins.size() - count;
 	write_to_file("first_fit", set_size, waste);
 	bins.clear();
 	bins.push_back(1.0);
@@ -46,7 +46,7 @@ void test_set(int set_size)
 
 	std::cout << "------------------------------- FIRST FIT DECREASING -------------------------------\n\n";
 	first_fit_decreasing(items, assignment, bins);
-	waste = count - bins.size();
+	waste = bins.size() - count;
 	write_to_file("first_fit_decreasing", set_size, waste);
 	bins.clear();
 	bins.push_back(1.0);
@@ -54,7 +54,7 @@ void test_set(int set_size)
 
 	std::cout << "------------------------------- BEST FIT -------------------------------\n\n";
 	best_fit(items, assignment, bins);
-	waste = count - bins.size();
+	waste = bins.size() - count;
 	write_to_file("best_fit", set_size, waste);
 	bins.clear();
 	bins.push_back(1.0);
@@ -62,7 +62,7 @@ void test_set(int set_size)
 
 	std::cout << "------------------------------- BEST FIT DECREASING -------------------------------\n\n";
 	best_fit_decreasing(items, assignment, bins);
-	waste = count - bins.size();
+	waste = bins.size() - count;
 	write_to_file("best_fit_decreasing", set_size, waste);
 }
 
