@@ -1,5 +1,0 @@
-first_fit,100,5.86145
-first_fit,1000,26.6296
-first_fit,10000,144.463
-first_fit,100000,676.665
-first_fit,1000000,3337

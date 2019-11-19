@@ -1,5 +1,0 @@
-best_fit_decreasing,100,3.06145
-best_fit_decreasing,1000,9.42958
-best_fit_decreasing,10000,31.2633
-best_fit_decreasing,100000,58.8646
-best_fit_decreasing,1000000,257.2004
